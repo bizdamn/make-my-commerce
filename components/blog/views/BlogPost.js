@@ -1,18 +1,12 @@
 import React, { useContext } from "react"
 import MDX from "@mdx-js/runtime"
 import config from "../../../blog.config"
-import { DiscussionEmbed } from "disqus-react"
 import { Box, Text, Heading } from "theme-ui"
 import Link from "next/link"
 import Image from "next/image"
-import DraftBadge from "../ui/DraftBadge"
 import { useRouter } from 'next/router';
-import { Store } from "../../../utils/Store"
 const BlogPost = ({ post }) => {
   const router = useRouter();
-  const { redirect } = router.query;
-  const isLocal = process.env.NODE_ENV === "development"
-  const { state, dispatch } = useContext(Store)
   const components = {
     Box: (props) => <Box {...props} />,
     pre: (props) => <div {...props} />,
@@ -27,7 +21,7 @@ const BlogPost = ({ post }) => {
               {post.coverImage && (
                 <div className="unset-img">
                   <Image
-                    src={post.coverImage}
+                    src='/a.jpg'
                     alt={post.coverImageAlt || ""}
                     layout="fill"
                     className="custom-img"
@@ -252,7 +246,7 @@ const BlogPost = ({ post }) => {
       </div> */}
 
       {/* Subscribe */}
-      <div className="subscribe-section">
+      {/* <div className="subscribe-section">
         <div className="subscribe-wrap">
           <h3>Subscribe to new posts</h3>
           <form data-members-form="subscribe" className="subscribe-form">
@@ -288,7 +282,7 @@ const BlogPost = ({ post }) => {
             </small>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

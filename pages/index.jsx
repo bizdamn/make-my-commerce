@@ -9,8 +9,8 @@ export default function Home() {
         {/* Hero */}
         <div className="header-section-wrapper">
           <div className="header-section-content">
-            <h4 className="header-section-title">E-commerce Platform for Machines      
-            <span className="mmc-green-color">.</span></h4>
+            <h4 className="header-section-title">E-commerce Platform for  
+            <span className="mmc-green-color"> Industrial Equipments.</span></h4>
             <div className="header-section-text">Add Products, Shipping & Manage Orders from <span style={{ color: '#ffbf50' }}>
             <b>  1 Dashboard</b></span></div>
             <div className="header-section-link">
