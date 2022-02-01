@@ -4,25 +4,9 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
 import { useForm } from 'react-hook-form';
 export default function HelpCenter() {
-    const [value, setValue] = React.useState('1');
 
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
-
-    const { register, handleSubmit } = useForm();
-    async function storeOwnerSubmitHandler(data) {
-        console.log(data)
-    }
-    async function supplierSubmitHandler(data) {
-        console.log(data)
-    }
 
     return (
         <>
