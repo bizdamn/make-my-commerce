@@ -7,7 +7,6 @@ import '../styles/css/blogCSS/main.css'
 import '../styles/css/blogCSS/screen.css'
 import Head from 'next/head'
 import { StoreProvider } from '../utils/Store';
-
 import { SnackbarProvider } from 'notistack';
 function MyApp({ Component, pageProps }) {
   return (

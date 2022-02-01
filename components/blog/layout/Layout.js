@@ -5,8 +5,8 @@ import PropTypes from "prop-types"
 import Head from "./Head"
 import Style from "./Style"
 import ThemeToggle from "../ui/ThemeToggle"
-import Header from '../../Header'
-import Footer from '../../Footer'
+import Header from '../../common/Header'
+import Footer from '../../common/Footer'
 // inject inline styles on the body before the page is rendered to avoid the flash of light if we are in dark mode
 let codeToRunOnClient = false
 if (theme.colors.modes && theme.colors.modes.length !== 0) {

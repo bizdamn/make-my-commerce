@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -25,8 +24,7 @@ export default function HelpCenter() {
     }
 
     return (
-        <>
-            <Header />
+        <Layout>
             <Box sx={{ width: '100%', typography: 'body1' }}>
                 <TabContext value={value}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -69,7 +67,6 @@ export default function HelpCenter() {
                     </TabPanel>
                 </TabContext>
             </Box>
-            <Footer />
-        </>
+            </Layout>
     )
 }

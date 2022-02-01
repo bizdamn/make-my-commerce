@@ -26,7 +26,7 @@ export default function Contact() {
 
                     <div className="custom-content">
                         <form onSubmit={handleSubmit(submitHandler)}>
-                            <h1>Contact me</h1>
+                            <h1>Contact Us</h1>
                             <label htmlFor="name">Your name</label>
                             <input id="name" type="text" name="name" {...register('name')} required />
                             <label htmlFor="email">Your email address</label>

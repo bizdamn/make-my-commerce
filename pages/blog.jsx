@@ -13,11 +13,15 @@ const Blog = ({ posts, prevPosts, nextPosts }) => (
     imageUrl={config.shareImage}
     imageAlt={config.shareImageAlt}
   >
-    <div>
-    <Categories />
-      <Posts posts={posts} prevPosts={prevPosts} nextPosts={nextPosts} />
-      <Subscribe/>
+    <div className='mx-3'>
+      <h4 className="header-section-title ">Blog</h4>
+      <div style={{ marginTop: 30 }}>
+        <Posts posts={posts} prevPosts={prevPosts} nextPosts={nextPosts} />
+      </div>
     </div>
+
+          {/* <Categories /> */}
+      {/* <Subscribe/> */}
   </Wrapper>
 )
 

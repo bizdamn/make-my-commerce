@@ -5961,6 +5961,9 @@ body.admin-bar .account-header {
 
 
 
+.help-center-card{
+border:2px solid #b9b9b9;
+}
 .help-center-card:hover{
 border:2px solid #008060;
 }

@@ -1,13 +1,10 @@
 import Grid from '@mui/material/Grid';
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 export default function Home() {
   return (
-    <>
-
-      <Header />
+      <Layout >
       <main role="main">
         {/* Hero */}
         <div className="header-section-wrapper">
@@ -64,7 +61,7 @@ export default function Home() {
 
 
 
-        <section style={{zIndex:-1}} className="">
+        <section  className="">
           <div className="parralax-feature-container">
             <div className="parralax-feature-grid">
               <div className="parralax-feature-grid-col -left">
@@ -105,7 +102,7 @@ export default function Home() {
         </section>
 
         {/* How to start */}
-        <section style={{zIndex:-1}} className="steps-block">
+        <section  className="steps-block">
           <h2 className="steps-block-title mmc-block-title">
             <span className="steps-block-title-wrapper">
               Follow these 5 steps to create an online store<span className="mmc-green-color">..</span> 
@@ -152,7 +149,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section style={{zIndex:-1}} className="z-grid">
+        <section  className="z-grid">
           <div className="z-grid-wrapper container">
             <h2 className="z-grid-title mmc-block-title">
               <span>
@@ -237,7 +234,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section style={{zIndex:-1}} id="templates" className="dollie-blueprints">
+        <section  id="templates" className="dollie-blueprints">
           <div className="container">
             <h2 className="dollie-blueprints-title mmc-block-title">
               <span>
@@ -268,7 +265,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section style={{zIndex:-1}} className="single-video">
+        <section  className="single-video">
           <h2 className="single-video-title mmc-block-title">
             <span>
               Get the help you need, every step of the way<span className="mmc-green-color">.</span>
@@ -393,7 +390,7 @@ export default function Home() {
             </div>
           </section> */}
 
-        <section style={{zIndex:-1}} className="faq-block">
+        <section  className="faq-block">
           <div className="faq-block-wrapper">
             <h2 className="faq-block-title mmc-block-title">
               <span>
@@ -471,7 +468,7 @@ export default function Home() {
 
 
 
-        <section style={{zIndex:-1}} className="z-grid">
+        <section  className="z-grid">
           <div className="z-grid-wrapper container">
             <h2 className="z-grid-title mmc-block-title">
               <span>
@@ -506,7 +503,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section style={{zIndex:-1}} id="bottom-block" className="small-cta-3">
+        <section  id="bottom-block" className="small-cta-3">
           <div className="small-cta-3-wrapper container">
             <h2 className="small-cta-3-title mmc-block-title">
               <span>
@@ -524,7 +521,6 @@ export default function Home() {
 
       </main> {/* end #main */}
 
-      <Footer />
-    </>
+    </Layout>
   )
 }
