@@ -66,13 +66,9 @@ export default function Home() {
             <div className="parralax-feature-grid">
               <div className="parralax-feature-grid-col -left">
                 <div className="parralax-feature-img">
-                  <div className="parralax-feature-device">
-                    <div className="parralax-feature-device-img"><Image width={500} height={1000} className="image-up-down" src="/images/basic_images/phone1.svg" alt='' /></div>
-                    <div className="parralax-feature-particle">
-                      <div className="parralax-feature-particle-item -v3 -left"><Image width={300} height={300} className="image-up-down" src="/images/basic_images/mmc.svg" alt='' /></div>
-                      <div className="parralax-feature-particle-item -v4 -right"><Image width={300} height={300} className="image-up-down" src="/images/basic_images/notification.svg" alt='' /></div>
-                    </div>
-                  </div>
+                  <video className="image-up-down"autoPlay muted loop>
+              <source src="/mobileVideo.mp4" type="video/mp4" />
+            </video>
                 </div>
               </div>
               <div className="parralax-feature-grid-col -right">
