@@ -49,7 +49,7 @@ export default function Footer() {
                 </li> */}
                 <li className="mmc-social-icon instagram">
                   <a href="https://makemycommerce.in/">
-                  <i class="fas fa-globe"></i>
+                  <i className="fas fa-globe"></i>
                   </a>
                 </li>
                 <li className="mmc-social-icon instagram">
@@ -57,7 +57,7 @@ export default function Footer() {
                     {/* <Image width={20} height={20} src="/images/basic/instagram.svg" alt='Make My Commerce Instagram Link' />
                     <span className="screen-reader-text">
                       Link to Instagram </span> */}
-                      <i class="fab fa-instagram"></i>
+                      <i className="fab fa-instagram"></i>
                   </a>
                 </li>
               </ul>
