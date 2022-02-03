@@ -5,9 +5,9 @@ import Layout from '../components/Layout'
 export default function Home() {
   return (
       <Layout >
-      <main role="main">
+      <main role="main ">
         {/* Hero */}
-        <div className="header-section-wrapper">
+        <div className="header-section-wrapper pt-5">
           <div className="header-section-content">
             <h4 className="header-section-title">E-commerce Platform for  
             <span className="mmc-green-color"> Industrial Equipments.</span></h4>

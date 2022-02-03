@@ -33,28 +33,34 @@ export default function Footer() {
                 <p>2021 © Powered by <Link href='/'><a>Make My Commerce</a></Link>  </p>
               </div>
               <ul className="mmc-social-icons">
-                <li className="mmc-social-icon facebook">
+                {/* <li className="mmc-social-icon facebook">
                   <a href="https://www.facebook.com/">
                     <Image width={20} height={20} src="/images/basic/facebook.svg" alt='Make My Commerce Facebook Link' />
                     <span className="screen-reader-text">
                       Link to Facebook </span>
                   </a>
-                </li>{/* .social-icon */}
+                </li>
                 <li className="mmc-social-icon twitter">
                   <a href="https://twitter.com/">
                     <Image width={20} height={20} src="/images/basic/twitter.svg" alt='Make My Commerce Twitter Link' />
                     <span className="screen-reader-text">
                       Link to Twitter </span>
                   </a>
-                </li>{/* .social-icon */}
+                </li> */}
                 <li className="mmc-social-icon instagram">
-                  <a href="https://www.instagram.com/">
-                    <Image width={20} height={20} src="/images/basic/instagram.svg" alt='Make My Commerce Instagram Link' />
-                    <span className="screen-reader-text">
-                      Link to Instagram </span>
+                  <a href="https://makemycommerce.in/">
+                  <i class="fas fa-globe"></i>
                   </a>
-                </li>{/* .social-icon */}
-              </ul>{/* .social-icons */}
+                </li>
+                <li className="mmc-social-icon instagram">
+                  <a href="https://www.instagram.com/makemycommerce/">
+                    {/* <Image width={20} height={20} src="/images/basic/instagram.svg" alt='Make My Commerce Instagram Link' />
+                    <span className="screen-reader-text">
+                      Link to Instagram </span> */}
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </footer>

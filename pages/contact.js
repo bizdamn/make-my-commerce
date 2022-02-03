@@ -20,11 +20,11 @@ export default function Contact() {
    
     return (
         <>
-            <div className="custom-wrap">
+            <div className="custom-wrap  ">
                 <div className="custom-image global-bg-image" style={{ backgroundImage: 'url(/images/main/contact.jpg)' }} />
                 <div className="custom-container">
 
-                    <div className="custom-content">
+                    <div className="custom-content pt-5">
                         <form onSubmit={handleSubmit(submitHandler)}>
                             <h1>Contact Us</h1>
                             <label htmlFor="name">Your name</label>
