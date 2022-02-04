@@ -3,21 +3,26 @@ import React from 'react'
 import Link from 'next/link'
 import Image from "next/image"
 import { useForm } from 'react-hook-form';
-
+import { useSnackbar } from 'notistack';
 export default function Contact() {
-    const {register,handleSubmit} = useForm();
-    async function submitHandler (data) {
-    console.log(data)
-    const response = await fetch("/api/contact", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json',
-          },
-    })
-    console.log(response)
+    const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+
+    const { register, handleSubmit } = useForm();
+    async function submitHandler(data) {
+        closeSnackbar();
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        if (response.status == 200) {
+            enqueueSnackbar('We have received your Message. We will get back to you soon', { variant: 'success' }
+            );
+        }
     }
-   
+
     return (
         <>
             <div className="custom-wrap  ">
