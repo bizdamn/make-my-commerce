@@ -20,7 +20,7 @@ export default function Home() {
             </div>
           </div>
           <div className="header-section-image">
-            <video className="image-up-down" width="70%" autoPlay muted loop>
+            <video className="image-up-down" width="100%" autoPlay muted loop>
               <source src="/images/illustrations/hero.mp4" type="video/mp4" />
             </video>
           </div>
@@ -66,7 +66,7 @@ export default function Home() {
             <div className="parralax-feature-grid">
               <div className="parralax-feature-grid-col -left">
                 <div className="parralax-feature-img">
-                  <video className="image-up-down"autoPlay muted loop>
+                  <video className="image-up-down"autoPlay width="100%" muted loop>
               <source src="/mobileVideo.mp4" type="video/mp4" />
             </video>
                 </div>
