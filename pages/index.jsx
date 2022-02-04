@@ -4,15 +4,15 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 export default function Home() {
   return (
-      <Layout >
+    <Layout >
       <main role="main ">
         {/* Hero */}
         <div className="header-section-wrapper pt-5">
           <div className="header-section-content">
-            <h4 className="header-section-title">E-commerce Platform for  
-            <span className="mmc-green-color"> Industrial Equipments.</span></h4>
+            <h4 className="header-section-title">E-commerce Platform for
+              <span className="mmc-green-color"> Industrial Equipments.</span></h4>
             <div className="header-section-text">Add Products, Shipping & Manage Orders from <span style={{ color: '#ffbf50' }}>
-            <b>  1 Dashboard</b></span></div>
+              <b>  1 Dashboard</b></span></div>
             <div className="header-section-link">
               {/* <Link href='/login'>
                 <a className="mmc-btn mmc-blue-btn" >Get Started</a>
@@ -24,6 +24,29 @@ export default function Home() {
               <source src="/images/illustrations/hero.mp4" type="video/mp4" />
             </video>
           </div>
+        </div>
+
+
+
+        <div className="header-section-wrapper pt-5">
+          <div className="header-section-image">
+            <video className="image-up-down" width="100%" autoPlay muted loop>
+              <source src="/mobileVideo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="header-section-content">
+            <div className="parralax-feature-title">
+              <h2 style={{ color: ' #384c60' }}>Everything You Need to <br />Start Selling Online</h2>
+            </div>
+            <div className="parralax-feature-description">
+              <ul style={{ listStyle: 'circle' }}>
+                <li>Add Product Document (Manuals) easily</li>
+                <li>Beautiful E-commerce Website</li>
+                <li>Automate Product Shipping</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
 
 
@@ -61,53 +84,18 @@ export default function Home() {
 
 
 
-        <section  className="">
-          <div className="parralax-feature-container">
-            <div className="parralax-feature-grid">
-              <div className="parralax-feature-grid-col -left">
-                <div className="parralax-feature-img">
-                  <video className="image-up-down"autoPlay width="100%" muted loop>
-              <source src="/mobileVideo.mp4" type="video/mp4" />
-            </video>
-                </div>
-              </div>
-              <div className="parralax-feature-grid-col -right">
-                <div className="parralax-feature-body">
-                  <div className="parralax-feature-title">
-                    <h2 style={{ color: ' #384c60' }}>Everything You Need to <br />Start Selling Online</h2>
-                  </div>
-                  <div className="parralax-feature-description">
-                    <ul style={{ listStyle:'circle' }}>
-                      <li>Add Product Document (Manuals) easily</li>
-                      <li>Beautiful E-commerce Website</li>
-                      <li>Automate Product Shipping</li>
-                    </ul>
-                  </div>
-                  <div className="parralax-feature-action">
-                    <div className="small-cta-3-links">
-                      {/* <Link href='/login'>
-                        <a className="mmc-btn mmc-yellow-btn">Get My Website</a>
-                      </Link> */}
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* How to start */}
-        <section  className="steps-block">
+        <section className="steps-block">
           <h2 className="steps-block-title mmc-block-title">
             <span className="steps-block-title-wrapper">
-              Follow these 5 steps to create an online store<span className="mmc-green-color">..</span> 
+              Follow these 5 steps to create an online store<span className="mmc-green-color">..</span>
               <Image width={300} height={300} src="/images/basic/arrow-2.svg" alt='Make My Commerce' />
             </span>
           </h2>
           <div className="steps-block-list">
             <div className="steps-block-list-item">
-              <Image  width={40} height={40} src="/images/basic/step-1.svg" alt='' loading="lazy" />
+              <Image width={40} height={40} src="/images/basic/step-1.svg" alt='' loading="lazy" />
               <div className="steps-block-list-item-title">1. Create Account</div>
               <div className="steps-block-list-item-description">
                 <a className="steps-block-list-item-description">Log In</a> to your account or <a className="steps-block-list-item-description">Sign Up</a>.
@@ -120,32 +108,32 @@ export default function Home() {
               <div className="steps-block-list-item-description">Ready to use Professional Templates</div>
             </div>
             <div className="steps-block-list-item">
-              <Image  width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
+              <Image width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
               <div className="steps-block-list-item-title">3. Add Products to your E-commerce Store</div>
               <div className="steps-block-list-item-description">Add product with manuals and all required details</div>
             </div>
           </div>
           <div className="steps-block-list">
             <div className="steps-block-list-item">
-              <Image  width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
+              <Image width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
               <div className="steps-block-list-item-title">4. Connect a Payment Provider</div>
               <div className="steps-block-list-item-description">Accept all major credit cards, PayPal, Apple
                 Pay, Google Pay, and Cash App Pay. </div>
             </div>
             <div className="steps-block-list-item">
-              <Image  width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
+              <Image width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
               <div className="steps-block-list-item-title">4. Activate Shipping</div>
               <div className="steps-block-list-item-description">Automate Shipping from your Supplier to your Customer.</div>
             </div>
             <div className="steps-block-list-item">
-              <Image  width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
+              <Image width={40} height={40} src="/images/basic/step-3.svg" alt='' loading="lazy" />
               <div className="steps-block-list-item-title">5. Publish your eCommerce website and start
                 selling.</div>
               <div className="steps-block-list-item-description">Publish in literally One Click</div>
             </div>
           </div>
         </section>
-        <section  className="z-grid">
+        <section className="z-grid">
           <div className="z-grid-wrapper container">
             <h2 className="z-grid-title mmc-block-title">
               <span>
@@ -230,7 +218,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section  id="templates" className="dollie-blueprints">
+        <section id="templates" className="dollie-blueprints">
           <div className="container">
             <h2 className="dollie-blueprints-title mmc-block-title">
               <span>
@@ -261,7 +249,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section  className="single-video">
+        <section className="single-video">
           <h2 className="single-video-title mmc-block-title">
             <span>
               Get the help you need, every step of the way<span className="mmc-green-color">.</span>
@@ -386,11 +374,11 @@ export default function Home() {
             </div>
           </section> */}
 
-        <section  className="faq-block">
+        <section className="faq-block">
           <div className="faq-block-wrapper">
             <h2 className="faq-block-title mmc-block-title">
               <span>
-                Frequently Asked Questions<span className="mmc-green-color">.</span> 
+                Frequently Asked Questions<span className="mmc-green-color">.</span>
                 <Image width={300} height={300} src="/images/basic/arrow-11.svg" alt='' />
               </span>
             </h2>
@@ -464,7 +452,7 @@ export default function Home() {
 
 
 
-        <section  className="z-grid">
+        <section className="z-grid">
           <div className="z-grid-wrapper container">
             <h2 className="z-grid-title mmc-block-title">
               <span>
@@ -499,7 +487,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section  id="bottom-block" className="small-cta-3">
+        <section id="bottom-block" className="small-cta-3">
           <div className="small-cta-3-wrapper container">
             <h2 className="small-cta-3-title mmc-block-title">
               <span>
