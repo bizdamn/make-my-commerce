@@ -6,6 +6,7 @@ import '../styles/css/typography.css'
 import '../styles/css/blogCSS/main.css'
 import '../styles/css/blogCSS/screen.css'
 import '../styles/css/documentation/main.css'
+import '../styles/css/documentation/bootstrap.min.css'
 import Head from 'next/head'
 import { StoreProvider } from '../utils/Store';
 import { SnackbarProvider } from 'notistack';

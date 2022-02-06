@@ -24,7 +24,7 @@ export default function Header() {
       <div >
         <Link href="/">
           <a>
-            <Image width="80" height="80" src="/images/logo.svg" alt='Make My Commerce Logo' />
+            <Image width="300" height="100" src="/images/name.svg" alt='Make My Commerce Logo' />
           </a>
         </Link>
         <input className="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
