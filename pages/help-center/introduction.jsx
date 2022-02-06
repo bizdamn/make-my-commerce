@@ -10,7 +10,7 @@ export default function introduction() {
          
           </div>
           <div className="header-section-image">
-          <Image className='image-up-down' width='300' height='300'src='/coming-soon.png'></Image>
+          <Image className='image-up-down' width='300' height='300'src='/coming-soon.png'alt='Coming Soon'></Image>
           </div>
         </div>
 

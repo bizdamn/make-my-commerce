@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image'
 export default function doc() {
   return (<>
     <div>
@@ -44,35 +44,34 @@ export default function doc() {
               <div className="alert alert-info" role="alert">
                 <span className="icon-info" />
                 <p>
-                  This documentation is always evolving. If you've not been here for a while, perhaps check out
+                  This documentation is always evolving. If youve not been here for a while, perhaps check out
                   the This documentation is always evolving.
                 </p>
               </div>
               <p>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                alteration in some form, by injected humour, or randomised words which dont look even slightly
                 believable.
               </p>
               <p>
-                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything
+                If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything
                 embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
                 repeat predefined chunks as necessary, making this the first true generator on the Internet.
               </p>
-              <img className="aligncenter" src="/doc-images/connection.png" alt />
+              <Image width="70" height="70"className="aligncenter" src="/doc-images/connection.png" alt='Documentation' />
               <h2>Auth Services &amp; Requirments</h2>
               <p>
-                If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything
+                If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything
                 embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
                 repeat predefined chunks as necessary, making this the first true generator on the Internet.
               </p>
               <blockquote>
-                echo "Hello World";
-                echo "\n";
+                echo Hello World;
               </blockquote>
               <h2>Final Step</h2>
               <p>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words which don’t look even slightly
+                alteration in some form, by injected humour, or randomised words which dont look even slightly
                 believable.
               </p>
             </article>

@@ -17,7 +17,7 @@ Expertise you Need
             </div>
           </div>
           <div className="header-section-image">
-          <Image className='image-up-down' width='1000' height='1000'src='/consult-expert.png'></Image>
+          <Image className='image-up-down' width='1000' height='1000'src='/consult-expert.png' alt='Consult an Expert'></Image>
           </div>
         </div>
 

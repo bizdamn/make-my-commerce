@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image'
 export default function dochome() {
   return (<>
 <div>
@@ -24,23 +24,27 @@ export default function dochome() {
       <div className="row features-section">
         <div className="text-center col-sm-4">
           <div className="media-body">
-            <span className="icon"><img src="/doc-images/icon/icon1.png" alt /></span>
+            <span className="icon">
+              <Image width="70" height="70"src="/doc-images/icon/icon1.png" alt='Documentation' />
+             </span>
             <h3>Help &amp; Documentation</h3>
             <p className="text-muted">Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress</p>
           </div>
         </div>
         <div className="text-center col-sm-4">
           <div className="media-body">
-            <span className="icon"><img src="/doc-images/icon/icon2.png" alt /></span>
+            <span className="icon"> <Image width="70" height="70"src="/doc-images/icon/icon2.png"alt='Documentation' />
+            </span>
             <h3>Developer Resources</h3>
             <p className="text-muted">An incredibly codex has been created for you to use as reference when developing extensions</p>
           </div>
         </div>
         <div className="text-center col-sm-4">
           <div className="media-body">
-            <span className="icon"><img src="/doc-images/icon/icon3.png" alt /></span>
+            <span className="icon">
+            <Image width="70" height="70"src="/doc-images/icon/icon3.png" alt='Documentation' /></span>
             <h3>Community Support</h3>
-            <p>The source code is available on GitHub, you can grab it and twist it to your heart’s content</p>
+            <p>The source code is available on GitHub</p>
           </div>
         </div>
       </div>
@@ -60,11 +64,10 @@ export default function dochome() {
               <div className="topics-list">
                 <h3><a href="#"><span className="badge">19</span>Introduction</a></h3>
                 <ul>
-                  <li><a href="single.html"> How to use this documentation? </a></li>
-                  <li><a href="single.html"> How to find topics? </a></li>
-                  <li><a href="single.html"> What is included and why? </a></li>
-                  <li><a href="single.html"> Basic knowledge requirments. </a></li>
-                  <li><a href="single.html"> Getting Started &amp; What is next. </a></li>
+                  <li><a href=""> How to find topics? </a></li>
+                  <li><a href=""> How to find topics? </a></li>
+                  <li><a href=""> How to find topics? </a></li>
+                  <li><a href=""> How to find topics? </a></li>
                 </ul>
               </div>
             </div>
@@ -113,7 +116,7 @@ export default function dochome() {
             <div className="widget widget-support-forum">
               <span className="icon icon-forum" />
               <h4>Looking for help? Join Community</h4>
-              <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p>
+              <p>Couldnt find what your are looking for ? Why not join out support forums and let us help you.</p>
               <a href="#" className="btn-success-doc">Support Forum</a>
             </div>
             {/******************************** Lists ********************************/}
