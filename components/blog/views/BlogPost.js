@@ -17,18 +17,18 @@ const BlogPost = ({ post }) => {
       <article className="post-section">
         <div className="post-header item is-hero">
           <div className="item-container">
-            {/* <div className="item-image global-image">
+            <div className="item-image">
+
               {post.coverImage && (
-                <div className="unset-img">
-                  <Image
-                    src='/a.jpg'
-                    alt={post.coverImageAlt || ""}
-                    layout="fill"
-                    className="custom-img"
-                  />
-                </div>
+                <Image
+                  src={post.coverImage}
+                  alt={""}
+                  layout="fill"
+                />
               )}
-            </div> */}
+
+            </div>
+
             <div className="item-content">
               <div className="item-tags global-tags">
                 {post.premium ? (
@@ -50,23 +50,8 @@ const BlogPost = ({ post }) => {
               </div>
               <h1 className="item-title">{post.title}</h1>
               <div className="item-meta global-meta">
-                <div className="item-profile-image">
-                  <Link href={"/author/"}>
-                    <a className="global-image">
-                      <Image
-                        height={500}
-                        width={500}
-                        src={config.authorImage}
-                        alt="Author"
-                      />
-                    </a>
-                  </Link>
-                </div>
-                <div className="item-authors">
-                  <Link href={"/author/"}>
-                    <a>{post.author}</a>
-                  </Link>
 
+                <div className="item-authors">
                   <div className="item-time">
                     <time dateTime="2019-04-09">
                       {" "}
@@ -82,11 +67,12 @@ const BlogPost = ({ post }) => {
           </div>
         </div>
         <div className="post-content">
-        <MDX components={components}>{post.content}</MDX>
+
+          <MDX components={components}>{post.content}</MDX>
 
           {/* Share */}
           <div className="post-share-section">
-            <div style={{display: 'flex',justifyContent:'center'}} className="post-share-icon-wrap">
+            <div style={{ display: 'flex', justifyContent: 'center' }} className="post-share-icon-wrap">
               {/* <a
                 href=""
                 target="_blank"
