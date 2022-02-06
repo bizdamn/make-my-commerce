@@ -10,7 +10,7 @@ export default function doc() {
           <div className="container">
             <div className="row">
               <div className="col-md-8 ">
-                <p style={{ textAlign: 'left' }}>Sed eget orci eleifend enim mattis suscipit. Suspendisse potenti non ipsum.</p>
+                <p style={{ textAlign: 'left' }}>Getting Started With API: Lorem ipsum dolor sit.</p>
               </div>
               <div className="col-md-4">
                 <a href="#" className="btn btn-hero">
@@ -58,7 +58,7 @@ export default function doc() {
                 embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
                 repeat predefined chunks as necessary, making this the first true generator on the Internet.
               </p>
-              <Image width="70" height="70"className="aligncenter" src="/doc-images/connection.png" alt='Documentation' />
+              <Image width="700" height="300"className="aligncenter" src="/doc-images/connection.png" alt='Documentation' />
               <h2>Auth Services &amp; Requirments</h2>
               <p>
                 If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything

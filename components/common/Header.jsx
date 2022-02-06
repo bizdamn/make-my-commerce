@@ -35,6 +35,7 @@ export default function Header() {
             {/* <li><Link href='/login'><a>Login</a></Link></li> */}
             <li><Link href='/blog'><a>Blog</a></Link></li>
             <li><Link href='/help-center'><a>Help Center</a></Link></li>
+            <li><Link href='/documentation'><a>Documenation</a></Link></li>
             <li><Link href='/consult-expert'><a>Consult an Expert</a></Link></li>
             {/* <li><Link href='/ticket'><a>Raise Ticket</a></Link></li> */}
             <li><Link href='/contact'><a>Contact</a></Link></li>

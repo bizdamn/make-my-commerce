@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 export default function dochome() {
   return (<>
 <div>
@@ -11,8 +12,9 @@ export default function dochome() {
           <div className="col-md-8 col-md-offset-2">
             <h1>Knowledgebase</h1>
             <p className="">Sed eget orci eleifend enim mattis suscipit. Suspendisse potenti non ipsum.</p>
-          
-            <a href="#" className="btn btn-hero"><span className="icon-git" /> Start Now<span className="icon-right" /></a>
+          <Link  href="/login">
+            <a className="btn btn-hero"><span className="icon-git" /> Start Now<span className="icon-right" /></a>
+            </Link>
           </div>
         </div>
       </div>
@@ -62,50 +64,48 @@ export default function dochome() {
           <div className="row">
             <div className="col-sm-6">
               <div className="topics-list">
-                <h3><a href="#"><span className="badge">19</span>Introduction</a></h3>
+            {/* <h3>  <Link  href="/documentation/introduction"><a className="badge">19 Introduction</a> </Link></h3> */} 
                 <ul>
-                  <li><a href=""> How to find topics? </a></li>
-                  <li><a href=""> How to find topics? </a></li>
-                  <li><a href=""> How to find topics? </a></li>
-                  <li><a href=""> How to find topics? </a></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
                 </ul>
               </div>
             </div>
             <div className="col-sm-6">
               <div className="topics-list">
-                <h3><a href="#"><span className="badge">7</span>Intallation &amp; Activation</a></h3>
+                    {/* <h3>  <Link  href="/documentation/introduction"><a className="badge">19 Introduction</a> </Link></h3> */}
+                    
                 <ul>
-                  <li><a href="#"> How to use this documentation? </a></li>
-                  <li><a href="#"> How to find topics? </a></li>
-                  <li><a href="#"> What is included and why? </a></li>
-                  <li><a href="#"> Basic knowledge requirments. </a></li>
-                  <li><a href="#"> Getting Started &amp; What is next. </a></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-sm-6">
-              <div className="topics-list">
-                <h3><a href="#"><span className="badge">5</span>Import &amp; Export</a></h3>
+            <div className="topics-list">
+                  {/* <h3>  <Link  href="/documentation/introduction"><a className="badge">19 Introduction</a> </Link></h3> */}
                 <ul>
-                  <li><a href="#"> How to use this documentation? </a></li>
-                  <li><a href="#"> How to find topics? </a></li>
-                  <li><a href="#"> What is included and why? </a></li>
-                  <li><a href="#"> Basic knowledge requirments. </a></li>
-                  <li><a href="#"> Getting Started &amp; What is next. </a></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
                 </ul>
               </div>
             </div>
             <div className="col-sm-6">
-              <div className="topics-list">
-                <h3><a href="#"><span className="badge">17</span>Settings &amp; Configuration</a></h3>
+            <div className="topics-list">
+                  {/* <h3>  <Link  href="/documentation/introduction"><a className="badge">19 Introduction</a> </Link></h3> */}
                 <ul>
-                  <li><a href="#"> How to use this documentation? </a></li>
-                  <li><a href="#"> How to find topics? </a></li>
-                  <li><a href="#"> What is included and why? </a></li>
-                  <li><a href="#"> Basic knowledge requirments. </a></li>
-                  <li><a href="#"> Getting Started &amp; What is next. </a></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
                 </ul>
               </div>
             </div>
@@ -121,14 +121,13 @@ export default function dochome() {
             </div>
             {/******************************** Lists ********************************/}
             <div className="pt-50">
-              <div className="topics-list">
-                <h3><a href="#"><span className="badge">10</span>API Guide Lines</a></h3>
+            <div className="topics-list">
+                    {/* <h3>  <Link  href="/documentation/introduction"><a className="badge">19 Introduction</a> </Link></h3> */}
                 <ul>
-                  <li><a href="#"> How to use this documentation? </a></li>
-                  <li><a href="#"> How to find topics? </a></li>
-                  <li><a href="#"> What is included and why? </a></li>
-                  <li><a href="#"> Basic knowledge requirments. </a></li>
-                  <li><a href="#"> Getting Started &amp; What is next. </a></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
+                  <li><Link href="/documentation/introduction"><a> How to find topics? </a></Link></li>
                 </ul>
               </div>
             </div>
