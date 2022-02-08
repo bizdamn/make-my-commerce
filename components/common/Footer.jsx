@@ -33,7 +33,7 @@ export default function Footer() {
                 <p>2021 © Powered by <Link href='/'><a>Make My Commerce</a></Link>  </p>
               </div>
               <div className="main-footer-copyright">
-                <p>Made In <Image src='/indian-flag.svg' width={30} height={12}/> </p>
+                <p>Made In <Image src='/indian-flag.svg' width={30} height={12} alt='Indian Flag'/> </p>
               </div>
 
               

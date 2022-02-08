@@ -2,8 +2,10 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import Grid from '@mui/material/Grid';
+import Layout from '../../../components/Layout'
 export default function doc() {
   return (<>
+    <Layout>
     {/* Header */}
     <header className="hero overlay">
       <div className="masthead single-masthead">
@@ -131,7 +133,7 @@ export default function doc() {
 
       </div>
     </main>
-
+    </Layout>
 
   </>);
 }

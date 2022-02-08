@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
+import Layout from '../../../components/Layout'
 export default function dochome() {
   return (<>
+    <Layout>
     <div>
       <header id="hero" className="hero overlay">
 
@@ -101,7 +103,7 @@ export default function dochome() {
         </div>
       </section>
       {/* Call To Action */}
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div className="row call-to-action">
             <div className="col-lg-1">
@@ -116,9 +118,9 @@ export default function dochome() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
 
-
+    </Layout>
   </>);
 }
