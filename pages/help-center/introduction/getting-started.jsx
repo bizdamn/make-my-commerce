@@ -1,40 +1,43 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
+import Grid from '@mui/material/Grid';
 export default function doc() {
   return (<>
-    <div>
-      {/* Header */}
-      <header className="hero overlay">
-
-        <div className="masthead single-masthead">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 ">
-                <p style={{ textAlign: 'left' }}>Getting Started With API: Lorem ipsum dolor sit.</p>
-              </div>
-              <div className="col-md-4">
-                <a href="#" className="btn btn-hero">
-                  <span className="icon-git" /> Github Project<span className="icon-right" />
+    {/* Header */}
+    <header className="hero overlay">
+      <div className="masthead single-masthead">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 ">
+              <p style={{ textAlign: 'left' }}>Getting Started With Make My Commerce</p>
+            </div>
+            <div className="col-md-4">
+              <Link href="/login">
+                <a className="btn btn-hero">
+                  <span className="icon-git" /> Get Started<span className="icon-right" />
                 </a>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
-      </header>
-      {/* Breadcrumbs */}
-      <div className="breadcrumbs">
-        <div className="container">
-          <ol>
-            <li><a href="http://xvelopers.com/">Home</a></li>
-            <li><a href="archive.html">Knowledge Base</a></li>
-            <li className="active">Getting Started With API</li>
-          </ol>
-        </div>
       </div>
-      {/* Main Content */}
-      <main className="content-wrapper">
-        <div className="container">
-          <div className="col-lg-8">
+    </header>
+    {/* Breadcrumbs */}
+    <div className="breadcrumbs">
+      <div className="container">
+        <ol>
+          <li><Link href="/help-center"><a>Home</a></Link></li>
+          <li><Link href="/help-center/introduction"><a>Introduction</a></Link></li>
+          <li className="active">Getting Started With Make My Commerce</li>
+        </ol>
+      </div>
+    </div>
+    {/* Main Content */}
+    <main className="content-wrapper">
+      <div className="container">
+        <Grid container spacing={2}>
+          <Grid item lg={8} sm={12}>
             <article className="post">
               <h1>Getting Started With API </h1>
               <ul className="meta">
@@ -58,7 +61,7 @@ export default function doc() {
                 embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to
                 repeat predefined chunks as necessary, making this the first true generator on the Internet.
               </p>
-              <Image width="700" height="300"className="aligncenter" src="/doc-images/connection.png" alt='Documentation' />
+              <Image width="700" height="300" className="aligncenter" src="/doc-images/connection.png" alt='Documentation' />
               <h2>Auth Services &amp; Requirments</h2>
               <p>
                 If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything
@@ -84,15 +87,16 @@ export default function doc() {
                 <input type="submit" className="btn btn-success-doc" defaultValue="Submit Feedback" />
               </form>
             </div>
-          </div>
-          <div className="col-lg-4">
+          </Grid>
+          <Grid item lg={4} sm={12}>
+
             <div className="sidebar">
               <div className="widget widget-support-forum">
                 <span className="icon icon-forum" />
-                <h4>Looking for help? Join Community</h4>
-                <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help
-                  you.</p>
-                <a href="#" className="btn btn-success-doc">Support Forum</a>
+                <h4>Ready to start with Make My Commerce?</h4>
+                <p>One Stop to Source & Sell</p>
+                <Link href='/login'>
+                  <a className="btn btn-success-doc">Try It Free</a></Link>
               </div>
               {/******************************** Lists ********************************/}
               <div className="pt-50">
@@ -113,18 +117,20 @@ export default function doc() {
                     <li><a href="#"> Premium Members Features </a></li>
                     <li><a href="#"> API Usage &amp; Guide lines </a></li>
                     <li><a href="#"> Getting Started &amp; What is next. </a></li>
-                    <li><a href="#"> Installation &amp; Activation </a></li>
-                    <li><a href="#"> Premium Members Features </a></li>
-                    <li><a href="#"> API Usage &amp; Guide lines </a></li>
-                    <li><a href="#"> Getting Started &amp; What is next. </a></li>
+           
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </main>
-    </div>
+
+
+
+          </Grid>
+
+        </Grid>
+
+      </div>
+    </main>
 
 
   </>);

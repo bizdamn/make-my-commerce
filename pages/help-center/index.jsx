@@ -10,12 +10,24 @@ export default function HelpCenter() {
 
         <Layout>
 
-
+<header id="hero" className="hero overlay">
+   <div className="masthead text-center">
+       <div className="row">
+         <div className="col-md-12 col-md-offset-2">
+           <h1>Help Center</h1>
+           <p className="">Can’t find the answers you’re looking for?<br/> We’re here to help.</p>
+           <Link  href="/contact">
+            <a className="btn btn-hero"><span  />Contact Us<span className="icon-right" /></a>
+            </Link>
+         </div>
+       </div>
+   </div>
+ </header>
 
             <Box sx={{ width: '100%', typography: 'body1' }}>
                 <div className="row m-4">
                     <div className='mx-3'>
-                        <h4 className="header-section-title ">Help Center</h4>
+                        {/* <h4 className="header-section-title ">Help Center</h4> */}
                     </div>
                     <div className="col-md my-2">
                         <div className="card text-center help-center-card">

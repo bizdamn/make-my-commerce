@@ -32,7 +32,15 @@ export default function Footer() {
               <div className="main-footer-copyright">
                 <p>2021 © Powered by <Link href='/'><a>Make My Commerce</a></Link>  </p>
               </div>
+              <div className="main-footer-copyright">
+                <p>Made In <Image src='/indian-flag.svg' width={30} height={12}/> </p>
+              </div>
+
+              
               <ul className="mmc-social-icons">
+              <li className="mmc-social-icon">
+                 
+                </li>
                 {/* <li className="mmc-social-icon facebook">
                   <a href="https://www.facebook.com/">
                     <Image width={20} height={20} src="/images/basic/facebook.svg" alt='Make My Commerce Facebook Link' />
